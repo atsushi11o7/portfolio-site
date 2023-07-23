@@ -1,3 +1,3 @@
-# portfolio_site
+# portfolio-site
 
 取り組んだことをまとめるサイト
