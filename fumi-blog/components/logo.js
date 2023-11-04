@@ -7,13 +7,13 @@ export default function Logo({ isHeadr = false }) {
     if (isHeadr) {
         return (
             <Link href="/"  legacyBehavior>
-                <a className={styles.box}>
+                <a className={styles.image}>
                     <figure>
                         <Image
                             src={logo}
                             alt="logo"
                             layout="responsive"
-                            sizes="(min-width: 1152px) 1152px, 100vw"
+                            sizes="(min-width: 330px) 330px, 100vw"
                         />
                     </figure>
                 </a>

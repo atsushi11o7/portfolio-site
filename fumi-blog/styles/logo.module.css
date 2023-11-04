@@ -4,11 +4,7 @@
     letter-spacing: 0.15em;
 }
 
-.box {
-    composes: basic;
-    letter-spacing: 0;
+.image {
     display: inline-block;
-    background-color: var(--gray-75);
-    color: var(--white);
     font-size: var(--small-heading2);
 }
