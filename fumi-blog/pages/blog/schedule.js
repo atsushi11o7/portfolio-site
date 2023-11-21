@@ -4,6 +4,7 @@ import PostHeader from "@/components/post-header"
 import PostBody from "@/components/post-body"
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "@/components/two-column"
 import ConvertBody from "@/components/convert-body"
+/*import PostCategories from "@/components/post-categories"*/
 import Contact from "@/components/contact"
 import Image from "next/image"
 
@@ -13,7 +14,7 @@ export default function Schedule({
     update,
     content,
     eyecatch,
-    category,
+    categories,
     tags
 }) {
     return (
@@ -27,10 +28,10 @@ export default function Schedule({
                             <Image
                                 src={eyecatch.url}
                                 alt=""
-                                layout="responsive"
                                 width={eyecatch.width}
                                 height={eyecatch.height}
-                                sizes="(min-width: 1152px) 1152px, 100vw"
+                                layout="responsive"
+                                sizes="(min-width: 768px) 768px, 100vw"
                                 priority
                             />
                         </figure>

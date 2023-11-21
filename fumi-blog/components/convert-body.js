@@ -8,17 +8,17 @@ export default function ConvertBody({ contentHTML }) {
                 const { src, alt, width, height } = node.attribs
                 return (
                     <Image
-                        layout="responsive"
                         src={src}
                         alt={alt}
                         width={width}
                         height={height}
-                        sizes="(min-width: 1152px) 1152px, 100vw"
+                        layout="responsive"
+                        sizes="(min-width: 768px) 768px, 100vw"
+                        priority
                     />
                 )
             }
         },
     })
-    console.log(contentReact)
-    return <>{contentReact}</>
+    return contentReact
 }
