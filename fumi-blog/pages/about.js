@@ -5,7 +5,15 @@ import PostBody from "@/components/post-body"
 import Contact from "@/components/contact"
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "@/components/two-column"
 import Image from "next/image"
-import eyecatch from "@/images/about.png"
+import { microCMSLoader } from "@/lib/imageLoader"
+// import eyecatch from "@/images/about.png"
+
+const eyecatch = {
+    src: "https://images.microcms-assets.io/assets/d7b392575f8841d3843d4904efc74f14/6742302f3a91432e94bd490bdfd93a4f/about.png",
+    height: 643,
+    width: 1119,
+    blurDataURL: "data:image/png;base64",
+}
 
 export default function About() {
     return (
@@ -25,6 +33,7 @@ export default function About() {
                 <TwoColumnMain>
                     <figure>
                         <Image
+                            loader={microCMSLoader}
                             src={eyecatch}
                             alt=""
                             layout="responsive"
