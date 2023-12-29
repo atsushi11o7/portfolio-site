@@ -1,6 +1,7 @@
 import styles from "@/styles/posts.module.css"
 import Link from "next/link"
 import Image from "next/image"
+import { microCMSLoader } from "@/lib/imageLoader"
 
 export default function Posts({ posts }) {
     return (
@@ -11,11 +12,14 @@ export default function Posts({ posts }) {
                         <a>
                             <figure>
                                 <Image
+                                    loader={microCMSLoader}
                                     src={eyecatch.url}
                                     alt=""
-                                    layout="fill"
-                                    objectFit="cover"
                                     sizes="(min-width: 1152px) 576px, 50vw"
+                                    fill
+                                    style={{
+                                        objectFit: 'cover',
+                                    }}
                                     priority
                                     placeholder="blur"
                                     blurDataURL={eyecatch.blurDataURL}

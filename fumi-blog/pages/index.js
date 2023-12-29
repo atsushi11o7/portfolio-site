@@ -7,7 +7,15 @@ import Pagination from "@/components/pagination"
 import { getImage } from "@/lib/getImage"
 import { eyecatchLocal } from "@/lib/constants"
 import Image from "next/image"
-import heroImage from "@/images/hero.jpg"
+import { microCMSLoader } from "@/lib/imageLoader"
+// import heroImage from "@/images/hero.jpg"
+
+const heroImage = {
+    src: "https://images.microcms-assets.io/assets/d7b392575f8841d3843d4904efc74f14/8b8e1a1b50634e7bbc9696757b9fd775/hero.jpg",
+    height: 4000,
+    width: 6000,
+    blurDataURL: "data:image/jpeg;base64",
+}
 
 export default function Home({ posts }) {
     return (
@@ -15,10 +23,14 @@ export default function Home({ posts }) {
             <Meta />
             <figure>
                 <Image
+                    loader={microCMSLoader}
                     src={heroImage}
                     alt=""
-                    layout="responsive"
                     sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto',
+                    }}
                     priority
                     placeholder="blur"
                 />

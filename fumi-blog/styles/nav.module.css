@@ -2,7 +2,7 @@
     .btn {
         display: none;
     }
-.list {
+    .list {
         display: flex;
         gap: 2em;
     }
@@ -45,11 +45,11 @@
     }
 
     .close .btn::before {
-        transform: translateY(-8px)
+        transform: translateY(-8px);
     }
 
     .close .btn::after {
-        transform: translateY(8px)
+        transform: translateY(8px);
     }
 
     .open .btn::before {

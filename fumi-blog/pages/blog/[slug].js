@@ -10,6 +10,7 @@ import ConvertBody from "@/components/convert-body"
 import Contact from "@/components/contact"
 import Pagination from "@/components/pagination"
 import Image from "next/image"
+import { microCMSLoader } from "@/lib/imageLoader"
 import { eyecatchLocal } from "@/lib/constants"
 import { getImage } from "@/lib/getImage"
 
@@ -41,13 +42,17 @@ export default function Post({
                     <TwoColumnMain>
                         <figure>
                             <Image
+                                loader={microCMSLoader}
                                 key={eyecatch.url}
                                 src={eyecatch.url}
                                 alt=""
                                 width={eyecatch.width}
                                 height={eyecatch.height}
-                                layout="responsive"
                                 sizes="(min-width: 1152px) 1152px, 100vw"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                }}
                                 priority
                                 placeholder="blur"
                                 blurDataURL={eyecatch.blurDataURL}
