@@ -26,8 +26,11 @@ export default function Home({ posts }) {
                     loader={microCMSLoader}
                     src={heroImage}
                     alt=""
-                    layout="responsive"
                     sizes="100vw"
+                    style={{
+                        width: '100%',
+                        height: 'auto',
+                    }}
                     priority
                     placeholder="blur"
                 />

@@ -48,8 +48,11 @@ export default function Post({
                                 alt=""
                                 width={eyecatch.width}
                                 height={eyecatch.height}
-                                layout="responsive"
                                 sizes="(min-width: 1152px) 1152px, 100vw"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                }}
                                 priority
                                 placeholder="blur"
                                 blurDataURL={eyecatch.blurDataURL}

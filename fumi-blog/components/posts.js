@@ -15,9 +15,11 @@ export default function Posts({ posts }) {
                                     loader={microCMSLoader}
                                     src={eyecatch.url}
                                     alt=""
-                                    layout="fill"
-                                    objectFit="cover"
                                     sizes="(min-width: 1152px) 576px, 50vw"
+                                    fill
+                                    style={{
+                                        objectFit: 'cover',
+                                    }}
                                     priority
                                     placeholder="blur"
                                     blurDataURL={eyecatch.blurDataURL}

@@ -21,8 +21,11 @@ export default function Logo({ isHeadr = false }) {
                             loader={microCMSLoader}
                             src={logo}
                             alt="logo"
-                            layout="responsive"
                             sizes="(min-width: 330px) 330px, 100vw"
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                            }}
                         />
                     </figure>
                 </a>

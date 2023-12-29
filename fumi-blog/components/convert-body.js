@@ -1,6 +1,6 @@
-import parse from "html-react-parser"
-import Image from "next/image"
-import { microCMSLoader } from "@/lib/imageLoader"
+import parse from "html-react-parser";
+import Image from "next/image";
+import { microCMSLoader } from "@/lib/imageLoader";
 
 export default function ConvertBody({ contentHTML }) {
     const contentReact = parse(contentHTML, {
@@ -14,8 +14,11 @@ export default function ConvertBody({ contentHTML }) {
                         alt={alt}
                         width={width}
                         height={height}
-                        layout="responsive"
                         sizes="(min-width: 768px) 768px, 100vw"
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                        }}
                         priority
                     />
                 )

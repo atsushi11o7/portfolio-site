@@ -36,8 +36,11 @@ export default function About() {
                             loader={microCMSLoader}
                             src={eyecatch}
                             alt=""
-                            layout="responsive"
                             sizes="(min-width: 768px) 768px, 100vw"
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                            }}
                             priority
                             placeholder="blur"
                         />
