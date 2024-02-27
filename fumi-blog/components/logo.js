@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from "@/styles/logo.module.css"
+import styles from "../styles/logo.module.css"
 import Image from "next/image";
-import { microCMSLoader } from "@/lib/imageLoader";
+import { microCMSLoader } from "../lib/imageLoader";
 // import logo from "@/images/logo.png"
 
 const logo = {

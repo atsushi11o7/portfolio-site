@@ -1,6 +1,6 @@
 import parse from "html-react-parser";
 import Image from "next/image";
-import { microCMSLoader } from "@/lib/imageLoader";
+import { microCMSLoader } from "../lib/imageLoader";
 
 export default function ConvertBody({ contentHTML }) {
     const contentReact = parse(contentHTML, {

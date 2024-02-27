@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  assetPrefix: 'https://www.fumiblog.com/',
+  assetPrefix: 'https://fumiblog.com',
   trailingSlash: true,
-  reactStrictMode: true,
   images: {
     loader: "custom",
     domains: ["images.microcms-assets.io"],
