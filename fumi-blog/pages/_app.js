@@ -1,5 +1,5 @@
-import "@/styles/globals.css"
-import Layout from "@/components/layout"
+import "../styles/globals.css"
+import Layout from "../components/layout"
 
 // Font Awesome
 import "@fortawesome/fontawesome-svg-core/styles.css"

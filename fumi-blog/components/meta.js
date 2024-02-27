@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { siteMeta } from "@/lib/constants"
+import { siteMeta } from "../lib/constants"
 import { useRouter } from "next/router";
-import siteImg from "@/images/logo.png"
+import siteImg from "../images/logo.png"
 
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon} = siteMeta
 
