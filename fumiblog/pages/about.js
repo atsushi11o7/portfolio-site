@@ -18,13 +18,6 @@ const eyecatch = {
 export default function About() {
     return (
         <Container>
-            <Meta
-                pageTitle="About"
-                pageDesc="about development activities"
-                pageImg={eyecatch.src}
-                pageImgW={eyecatch.width}
-                pageImgH={eyecatch.height}
-            />
             <Hero
                 subtitle="aboutのせつめい"
             />
