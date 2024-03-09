@@ -9,7 +9,6 @@ import { getImage } from "@/lib/getImage"
 export default function Blog({ posts }) {
     return (
         <Container>
-            <Meta pageTitle="Blog" />
             <Hero
                 subtitle="blogのせつめい"
                 imageOn

@@ -18,17 +18,6 @@ const eyecatch = {
 export default function About() {
     return (
         <Container>
-            <Meta
-                pageTitle="About"
-                pageDesc="about development activities"
-                pageImg={eyecatch.src}
-                pageImgW={eyecatch.width}
-                pageImgH={eyecatch.height}
-            />
-            <Hero
-                subtitle="aboutのせつめい"
-            />
-
             <TwoColumn>
                 <TwoColumnMain>
                     <figure>
@@ -46,18 +35,29 @@ export default function About() {
                         />
                     </figure>
                     <PostBody>
-                        <h2>準備中</h2>
+                        <h2>ABOUT</h2>
                         <p>
-                            あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+                            はじめまして。atsushiと申します。
                         </p>
                         <p>
-                            あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+                            現在大学院生で日々の学びをまとめる場としてブログを作成しました。
                         </p>
                         <p>
-                            あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+                            このブログは2024年に HTML/CSS/JavaScript の練習を兼ねて作成しました。主に機械学習関連の技術を学ぶ過程や、それ以外のプログラミングに関する活動の記録を投稿する予定です。
                         </p>
                         <p>
-                            あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお
+                            私の知識も、このブログも発展途上であり、追々機能の追加やデザインの変更を行っていきます。
+                        </p>
+
+                        <h3>profile</h3>
+                        <p>
+                            atsushi
+                        </p>
+                        <p>
+                            茨城県出身の大学院生。
+                        </p>
+                        <p>
+                            機械学習関連の研究を行っている。
                         </p>
                     </PostBody>
                 </TwoColumnMain>
